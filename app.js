@@ -22,6 +22,10 @@ function addnewNote() {
       return note.onNoteClick() }, false);
     this.note = note;
 
+    if (!className) {
+		className = "colour" + Math.ceil(Math.random() * 3);
+	   }
+
     notes.append("<li><div class='" + className + "'>" +
   					"<textarea class='note-title' placeholder='Untitled' maxlength='20'/>" +
   					"<textarea class='note-content' placeholder='Your content here'/>" +
@@ -29,7 +33,6 @@ function addnewNote() {
   					"</div></li>");
       var newNote = notes.find("li:last");
       newNote.find("img").click(function () {
-      // remove the note and save
       newNote.remove();
     })
     saveNotes();
