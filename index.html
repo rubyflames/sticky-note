@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- <html manifest="StickyNotes.manifest"> -->
+  <head>
+    <meta charset="utf-8">
+    <title>Rachel Lee's Maltem Sticky Note Assignment</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+<p>Welcome to the Sticky Note Board created by Rachel <u>Lee</u> Sau Han.</p>
+<p>Click on "New" to create a new sticky note</p>
+<p>Select your colour of your sticky (red, blue, yellow, green, white)</p>
+<p>Can't find your note? Search for the title of your note in the search bar</p>
+<p>Have fun! In the meantime, you can visit my <a href="https://github.com/rubyflames">Github</a> if you're interested.</p>
+
+    <div class="searchbardiv">
+      <form class="searchbar" action="index.html" method="get">
+        <input type="search" name="searchbar" value="" id="myInput" placeholder="Search note headers"></input>
+        <button type="button" name="search" id="searchbutton"></button>
+
+      </form>
+      <button type="button" name="newSticky" id="newSticky"></button>
+
+    </div>
+
+      <ul id="notes">
+      </ul>
+
+  </body>
+</html>

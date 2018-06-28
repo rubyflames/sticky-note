@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px Helvetica, Arial, san-serif;
+}
+
+.note {
+    height: 280px;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+.colour1 {
+  background-color: rgba(255, 240, 70, 1);
+ }
+.colour2 {
+  background-color: rgba(255, 255, 255, 1);
+}
+.colour3 {
+  background-color: rgba(70, 255, 70, 1);
+ }
+.closebutton {
+    display: none;
+    background-image: url(cancel.png);
+    height: 30px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 30px;
+}
+
+/* .stickynote {
+  background-color: white;
+} */
+/* textarea {
+  font-size: 11px;
+} */
+#searchbutton {
+  background-image: url(search.png);
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+/* .notetitle {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+#newSticky {
+  background-image: url(new-note.png);
+  background-position: absolute;
+  height: 30px;
+  width: 30px;
+}
